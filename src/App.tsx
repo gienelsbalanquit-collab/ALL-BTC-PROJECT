@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { ExternalLink, ChevronDown, Globe, Tv, Smartphone, Newspaper, Download, Play } from "lucide-react";
+import { Analytics } from '@vercel/analytics/react';
 import {
   BTC_LOGO, VIMEO_ID, ORIGINAL_PDF_CDN, PDF_PAGES, SECTIONS, LINKS, KINGS_CUP
 } from "./data";
@@ -579,6 +580,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
